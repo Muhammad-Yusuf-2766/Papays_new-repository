@@ -65,7 +65,7 @@ class Product {
         .exec();
 
       assert.ok(result, Definer.generel_err1);
-      return result;
+      return result[0];
     } catch (err) {
       throw err;
     }
